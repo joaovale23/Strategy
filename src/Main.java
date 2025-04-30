@@ -1,6 +1,8 @@
+package src;
+
 public class Main {
     public static void main(String[] args) {
-        MediaStrategy estrategia = new Aritmetica();      // troque por new Geometrica()
+        IMediaStrategy estrategia = new Aritmetica();      // troque por new Geometrica()
         Disciplina d = new Disciplina(estrategia);
 
         d.setNome("Padrões de Desenvolvimento");
